@@ -1,0 +1,14 @@
+<%- include('partials/head') %>
+<div id="calculator">
+  <div id="screen"><%- include('partials/screen') %></div>
+  <div id="body">
+    <%- include('partials/buttons') %>
+  </div>
+  <div class="none" id="history">
+    <h2>Calc History</h2>
+    <div class="historyFlex"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+<script src="history.js"></script>
+<%- include('partials/footer') %>

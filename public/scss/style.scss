@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    padding: 10px 0px;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+#calculator {
+    border-radius: 20px;
+    width: 376px;
+    background-color: #000;
+    padding: 15px 0px;
+}
+#screen {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+i {
+    cursor: pointer;
+}
+.display {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    font-size: 28px;
+}
+.none {
+    display: none !important;
+}
+#history {
+    h2 {
+        font-size: 34px;
+    }
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    .historyFlex {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-size: 18px;
+        overflow-y: scroll;
+        p {
+            padding: 10px 0px;
+            border-bottom: 1px solid white;
+        }   
+    }
+    .historyFlex::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+#body{
+    display: flex;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px 0px;
+        flex-wrap: wrap-reverse;
+        padding: 10px;
+        #special-keys {
+            display: flex;
+            flex-direction: column!important;
+            padding: 0px;
+        }
+        #normal-keys {
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px;
+        }
+        .dis {
+            background-color: rgb(243, 172, 40);
+        }
+        button {
+            width: 65px;
+            height: 65px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            background-color: #6c6969;
+            color: #fff;
+            font-size: 28px;
+        }
+        button:hover {
+            background-color: #837e7e;
+        }
+        .dis:hover {
+            background-color: rgb(246, 180, 59);   
+        }
+    }
+}
